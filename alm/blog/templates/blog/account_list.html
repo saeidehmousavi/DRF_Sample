@@ -1,0 +1,14 @@
+{% for account in object_list %}
+
+<account>
+    <h2>{{account.title}}</h2>
+    <div>{{account.account}}</div>
+    <div>{{account.author}}</div>
+    <div>{{account.publishe}}</div>
+    <p>{{account.content}}</p>
+</account>
+<hr>
+
+{% empty %}
+
+{% endfor %}
